@@ -1,4 +1,4 @@
-﻿/*
+/*
 *在线笔记本项目
 * author:pxy
 * date:2016.3.18
@@ -27,11 +27,11 @@ mongoose.connection.on('error',console.error.bind(console,'连接数据库失败
 var app = express();
 
 //定义EJS模块引擎和模板文件位置
-app.set('views',path.join('/home/myNote','views'));
+app.set('views',path.join('D:/nodejs/myNote','views'));
 app.set('view engine','ejs');
 
 //定义静态文件目录
-app.use(express.static(path.join('/home/myNote','public')));
+app.use(express.static(path.join('D:/nodejs/myNote','public')));
 
 //定义数据解析器
 app.use(bodyParser.json());
